@@ -6,10 +6,10 @@ figlet GAU to XSStool
 echo "Now, running gau on $1"
 echo $1 | gau > gau.txt
 
-echo "Now, running gau on $1"
+echo "Now, running waybackurls on $1"
 echo $1 | waybackurls >> gau.txt
 
-echo "Now
+echo "Now sorting duplicate urls"
 # Sort the duplicate urls
 cat gau.txt | sort -u > ultimate-gau.txt
 
